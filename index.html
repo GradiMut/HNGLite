@@ -7,12 +7,24 @@
     <title>HNGLite</title>
     <link rel="stylesheet" <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1./css/bootstrap.min.css">
 </head>
-<body>
+<body>   
+    <div class="forms">
+        <div class="form-group">
+            <form action="./src/backend/login.php" method="POST" id="contact-form">
+                <div class="input-field">
+            
+            
+                    <input type="email" name="email" required class="form-control" placeholder="youremail@mail.com" />
+            
+                    <input type="password" name="pass" required class="form-control" placeholder="Password" />
+            
+                                
+                    <input type="submit" value="CONTACT ME NOW" name="send" class="button" />
+                </div>
+            </form>
+        </div>
+    </div>
 
-    <h1>
-        Hello world
-    </h1>
-    
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
