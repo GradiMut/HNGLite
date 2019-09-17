@@ -1,0 +1,13 @@
+input[placeholder] {
+    font-size: 0.8em;
+}
+.form-group{
+    margin: 0 auto;
+}
+.forgot{
+    font-size: 0.8em;
+    color: #555;
+}
+.color{
+    background-color: rgb(248, 233, 233);
+}
