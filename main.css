@@ -1,0 +1,36 @@
+body .first {
+    background-image: url(./images/IMG_5618.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input[placeholder] {
+    font-size: 0.8em;
+}
+.button {
+    border-radius: 10px;
+}
+.transparent {
+    background-color: transparent !important;
+    border-radius: 10px;
+}
+.form-group {
+    margin: 0 auto;
+}
+.forgot {
+    font-size: 0.8em;
+    color: #555;
+}
+.sign {
+    font-size: 0.8em;
+    color: #777;
+    font-weight: bold;
+}
+.color {
+    background-color: rgb(248, 233, 233);
+}
+img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
