@@ -1,13 +1,13 @@
 <?php
 
-    $jsonFile = "data.json"; // JSON File
+    $jsonFile = "./data.json"; // JSON File
     $arrayData = array(); //create empty array
 
     if (isset($_POST['submit'])) {
         try {
             // Get Submited data from the from.
             $formData = array(
-                'fullName' => $_POST['name'],
+                'fullname' => $_POST['name'],
                 'email' => $_POST['email'],
                 'password' => $_POST['password']
             );
@@ -26,7 +26,7 @@
 
             // Write on data.json file
             if (file_put_contents($jsonFile, $jsonData)) {
-                echo 'Data successfully saved';
+                echo 'Welcome ', $_POST['name'];
             } else {
                 echo "error";
             }

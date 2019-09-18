@@ -31,22 +31,22 @@
         <div class="row pt-5" style="min-height: 100vh;" id="page">
             <div class="col col-md-12 align-self-center text-center">
                 <img class="bulb" src="./icons/lightbulb.svg" />
-                <form action="" method="" class="justify-content-center">
+                <form action="./src/backend/login.php" method="POST" class="justify-content-center">
                     <div class="form-group col-8 col-md-4 p-2">
-                        <input type="text" name="email" id="email" placeholder="Your email address" class="p-4 form-control form-control-lg color" />
+                        <input type="email" name="mail" id="email" placeholder="Your email address" class="p-4 form-control form-control-lg color" />
 
                         <div class="invalid-feedback">
                             Enter a valid email address
                         </div>
                     </div>
                     <div class="form-group col-8 col-md-4 p-2">
-                        <input type="password" name="password" id="password" placeholder="Password" class="p-4 form-control form-control-lg color" />
+                        <input type="password" name="pass" id="password" placeholder="Password" class="p-4 form-control form-control-lg color" />
                         <div class="invalid-feedback">
                             Password cannot be less than 8 characters long
                         </div>
                     </div>
                     <div class="form-group pt-3">
-                        <input type="submit" name="submit" id="submit" value="Login" class="p-3 btn btn-danger col-8 col-md-4" />
+                        <input type="submit" name="log" id="submit" value="Login" class="p-3 btn btn-danger col-8 col-md-4" />
                     </div>
                     <a href="#" class="float-right col-9 forgot">
                         <p>Forgot Password?</p>
