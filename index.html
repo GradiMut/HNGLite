@@ -14,65 +14,180 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row first" style="min-height: 100vh;">
+        <div class="container-fluid" id="view">
+            <div
+                class="row float-md-left bg-dark first"
+                style="min-height: 100vh;"
+            >
                 <div class="col col-md-12 align-self-center text-center">
-                    <h4 class="text-light">Welcome back!</h4>
+                    <img class="bulb" src="./icons/lightbulb.svg" />
+                    <h4 class="text-light h3">Hello</h4>
+                    <p class="text-danger">New here?</p>
                     <br />
                     <br />
+                    <p class="text-secondary">
+                        Enter your personal details to get started
+                    </p>
+                    <a
+                        class="btn btn-outline-light text-light font-weight-bold"
+                        id="switch"
+                    >
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+            <div class="row pt-5" style="min-height: 100vh;" id="page">
+                <div class="col col-md-12 align-self-center text-center">
+                    <img class="bulb" src="./icons/lightbulb.svg" />
                     <form action="" method="" class="justify-content-center">
-                        <div class="form-group col-10 col-md-3 p-2">
+                        <div class="form-group col-8 col-md-4 p-2">
                             <input
                                 type="text"
                                 name="email"
                                 id="email"
                                 placeholder="Your email address"
-                                class="p-4 form-control form-control-sm color transparent"
+                                class="p-4 form-control form-control-lg color"
                             />
+
                             <div class="invalid-feedback">
                                 Enter a valid email address
                             </div>
                         </div>
-                        <div class="form-group col-10 col-md-3 p-2">
+                        <div class="form-group col-8 col-md-4 p-2">
                             <input
                                 type="password"
                                 name="password"
                                 id="password"
                                 placeholder="Password"
-                                class="p-4 form-control form-control-sm color transparent"
+                                class="p-4 form-control form-control-lg color"
+                            />
+                            <div class="invalid-feedback">
+                                Password cannot be less than 8 characters long
+                            </div>
+                        </div>
+                        <div class="form-group pt-3">
+                            <input
+                                type="submit"
+                                name="email"
+                                id="email"
+                                value="Login"
+                                class="p-3 btn btn-danger col-8 col-md-4"
                             />
                         </div>
-                        <div class="form-group pt-4">
+                        <a href="#" class="float-right col-9 forgot">
+                            <p>Forgot Password?</p></a
+                        >
+
+                        <p
+                            class="text-center col-12 float-right h6 text-danger pt-5"
+                        >
+                            OR<br /><br /><br />
+                            <a href="#" class="">
+                                <img src="./icons/facebook.svg" alt=""
+                            /></a>
+                            <a href="#" class=" ">
+                                <img src="./icons/google.svg" alt=""
+                            /></a>
+                            <a href="#" class=" ">
+                                <img src="./icons/linkedin.svg" alt=""
+                            /></a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="view1" style="display: none">
+            <div
+                class="row float-md-left bg-dark first"
+                style="min-height: 100vh;"
+            >
+                <div class="col col-md-12 align-self-center text-center">
+                    <img class="bulb" src="./icons/lightbulb.svg" />
+                    <h4 class="text-light h3">Hello</h4>
+                    <p class="text-danger">New here?</p>
+                    <br />
+                    <br />
+                    <p class="text-secondary">
+                        Enter your personal details to get started
+                    </p>
+                    <a
+                        class="btn btn-outline-light text-light font-weight-bold"
+                        id="switch1"
+                    >
+                        Sign In
+                    </a>
+                </div>
+            </div>
+            <div class="row pt-5" style="min-height: 100vh;" id="page1">
+                <div class="col col-md-12 align-self-center text-center">
+                    <img class="bulb" src="./icons/lightbulb.svg" />
+                    <form action="" method="" class="justify-content-center">
+                        <div class="form-group col-8 col-md-4 p-2">
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Your full name"
+                                class="p-4 form-control form-control-lg color"
+                            />
+                        </div>
+                        <div class="form-group col-8 col-md-4 p-2">
+                            <input
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="Your email address"
+                                class="p-4 form-control form-control-lg color"
+                            />
+
+                            <div class="invalid-feedback">
+                                Enter a valid email address
+                            </div>
+                        </div>
+                        <div class="form-group col-8 col-md-4 p-2">
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                placeholder="Password"
+                                class="p-4 form-control form-control-lg color"
+                            />
+                            <div class="invalid-feedback">
+                                Password cannot be less than 8 characters long
+                            </div>
+                        </div>
+                        <div class="form-group pt-3">
                             <input
                                 type="submit"
                                 name="submit"
                                 id="submit"
-                                value="Sign in"
-                                class="p-2 btn btn-danger col-10 col-md-3 button"
+                                value="Register"
+                                class="p-3 btn btn-danger col-8 col-md-4"
                             />
                         </div>
-                        <div class="form-group col-md-5">
-                            <a
-                                href="#"
-                                class="float-md-left col-4 col-md-6 sign text-secondary"
-                            >
-                                Sign Up</a
-                            >
-                            <a
-                                href="#"
-                                class="float-right float-md-left col-8 col-md-4 forgot text-light"
-                            >
-                                Forgot Password?</a
-                            >
-                        </div>
-                        <br />
-                        <p class="text-center col-12 float-right h8 text-light">
-                            OR
+                        <a
+                            href=""
+                            id="signInLink"
+                            class="float-right col-9 forgot font-weight-bold d-md-none"
+                        >
+                            Sign In</a
+                        >
+
+                        <p
+                            class="text-center col-12 float-right h6 text-danger pt-5"
+                        >
+                            OR<br /><br /><br />
+                            <a href="#" class="">
+                                <img src="./icons/facebook.svg" alt=""
+                            /></a>
+                            <a href="#" class=" ">
+                                <img src="./icons/google.svg" alt=""
+                            /></a>
+                            <a href="#" class=" ">
+                                <img src="./icons/linkedin.svg" alt=""
+                            /></a>
                         </p>
                     </form>
-                    <img src="./icons/facebook.svg" alt="" />
-                    <img src="./icons/google-plus.svg" alt="" />
-                    <img src="./icons/linkedin.svg" alt="" />
                 </div>
             </div>
         </div>
