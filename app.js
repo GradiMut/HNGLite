@@ -1,5 +1,19 @@
 document.getElementById("email").addEventListener("blur", validateEmail);
-document.getElementById("password").addEventListener("blur", validatepassword);
+document.getElementById("password").addEventListener("blur", validatePassword);
+document.getElementById("switch").addEventListener("click", switchView);
+document.getElementById("switch1").addEventListener("click", switchView1);
+
+function switchView() {
+    document.getElementById("view").style.display = "none";
+    window.location.href = "#page1";
+
+    document.getElementById("view1").style.display = "block";
+}
+function switchView1() {
+    document.getElementById("view1").style.display = "none";
+    window.location.href = "#page";
+    document.getElementById("view").style.display = "block";
+}
 
 function validateEmail() {
     const email = document.getElementById("email");
@@ -12,3 +26,11 @@ function validateEmail() {
     }
 }
 
+function validatePassword() {
+    const pass = document.getElementById("password");
+    if (pass.value.length < 8) {
+        pass.classList.add("is-invalid");
+    } else {
+        pass.classList.remove("is-invalid");
+    }
+}
