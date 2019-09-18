@@ -7,7 +7,6 @@ document.getElementById("signInLink").addEventListener("click", signView);
 function switchView() {
     document.getElementById("view").style.display = "none";
     window.location.href = "#page1";
-
     document.getElementById("view1").style.display = "block";
 }
 function switchView1() {
