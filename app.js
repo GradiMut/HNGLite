@@ -2,6 +2,7 @@ document.getElementById("email").addEventListener("blur", validateEmail);
 document.getElementById("password").addEventListener("blur", validatePassword);
 document.getElementById("switch").addEventListener("click", switchView);
 document.getElementById("switch1").addEventListener("click", switchView1);
+document.getElementById("signInLink").addEventListener("click", signView);
 
 function switchView() {
     document.getElementById("view").style.display = "none";
@@ -14,7 +15,11 @@ function switchView1() {
     window.location.href = "#page";
     document.getElementById("view").style.display = "block";
 }
-
+function signView(e) {
+    document.getElementById("view1").style.display = "none";
+    document.getElementById("view").style.display = "block";
+    e.preventDefault();
+}
 function validateEmail() {
     const email = document.getElementById("email");
     const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
