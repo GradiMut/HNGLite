@@ -1,5 +1,8 @@
 document.getElementById("email").addEventListener("blur", validateEmail);
 document.getElementById("password").addEventListener("blur", validatePassword);
+document
+    .getElementById("password1")
+    .addEventListener("blur", validatePassword1);
 document.getElementById("switch").addEventListener("click", switchView);
 document.getElementById("switch1").addEventListener("click", switchView1);
 document.getElementById("signInLink").addEventListener("click", signView);
@@ -32,6 +35,14 @@ function validateEmail() {
 
 function validatePassword() {
     const pass = document.getElementById("password");
+    if (pass.value.length < 8) {
+        pass.classList.add("is-invalid");
+    } else {
+        pass.classList.remove("is-invalid");
+    }
+}
+function validatePassword1() {
+    const pass = document.getElementById("password1");
     if (pass.value.length < 8) {
         pass.classList.add("is-invalid");
     } else {
