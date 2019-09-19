@@ -85,7 +85,7 @@
         </div>
         <div class="row pt-5" style="min-height: 100vh;" id="page1">
             <div class="col col-md-12 align-self-center text-center">
-                <img class="bulb" src="./icons/lightbulb.svg" />
+                <img class="bulb m-5" src="./icons/lightbulb.svg" />
                 <form action="./src/backend/signup.php" method="POST" class="justify-content-center">
                     <div class="form-group col-8 col-md-4 p-2">
                         <input type="text" name="name" id="name" placeholder="Your full name" class="p-4 form-control form-control-lg color" />
