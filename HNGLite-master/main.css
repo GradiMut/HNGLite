@@ -30,7 +30,12 @@ input[placeholder] {
     padding-left: 10px;
     margin-top: -60px;
     
+}.pfirst{
+    color:rgb(161, 24, 24);
+    font-size: 30px;
+    margin-top: -50px;
 }
+
 .float-right col-9 forgot{
     text-decoration: none;
 }
